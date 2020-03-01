@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    {% block head %}
+        <title>MassenanDev</title>
+    {% endblock %}
+
+        <link rel="stylesheet" href="/styles.css">
+    </head>
+    <body>
+        <header>
+            <div class="links">
+                <a href="/">About Me</a>
+                <a href="/development">Development</a>
+            </div>
+        </header>
+       
+        {% block content %} {% endblock %}
+
+    </body>
+</html>
