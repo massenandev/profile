@@ -1,0 +1,50 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+
+<title>Development - MassenanDev</title>
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+{% endblock %}
+
+{% block content %}
+
+    <div id="wrapper">
+        <h1>Development</h1>
+    </div>
+
+    <section class="cards">
+
+        {% for item in items %}
+        <div class="card" id="{{item.id}}">
+            <div class="card_image-container">
+                <img src="https://c.pxhere.com/photos/72/52/code_code_editor_coding_computer_data_developing_development_ethernet-910940.jpg!d"
+                    alt="{{item.title}}">
+            </div>
+            <div class="card_content">
+                <p>{{item.title}}</p>
+            </div>
+            <div class="card_inf">
+                <p>{{item.type}}</p>
+                <p class="card_price">{{item.language}}</p>
+            </div>
+        </div>
+        {% endfor %}
+  
+    </section>
+    
+    <div class="modal-overlay">
+        <div class="modal">
+            <a class="close-modal">
+                <i class="material-icons">close</i>
+            </a>
+            <div class="modal-content">
+                <iframe src="" frameborder="0"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+    
+{% endblock %}
