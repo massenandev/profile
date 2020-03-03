@@ -94,6 +94,7 @@ header{
 .card{
     background-color: var(--color-rocket);
     display: grid;
+    cursor: pointer;
 }
 
 .card_image-container img{
@@ -158,4 +159,42 @@ iframe{
     height: 90%;
     position: absolute;
     top: 5%;
+}
+
+/*=== FEATURED ===*/
+.featured-wrapper.card_image-container{
+    position: relative;
+
+}
+.featured{
+    position: absolute;
+    background: #f7d05f;
+    color: #111;
+    padding: 2px 8px;
+    left: 5px;
+    border-radius: 6px;
+    top: -10px;
+}
+
+/*=== VIDEO PAGE ===*/
+.video{
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.video .card{
+    cursor: initial;
+}
+
+.card_video-container{
+    position: relative;
+    width: 100%;
+    padding-top: 62.5%;
+}
+
+.card_video-container iframe{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
 }

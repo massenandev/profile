@@ -3,7 +3,8 @@ module.exports = [
         id: "b4GPyuqBsuA",
         title: "Code | Development",
         type: "Language:",
-        language: "NodeJS"
+        language: "NodeJS",
+        featured: true
     },
     {
         id: "8yjkWGRlUmY",
@@ -21,7 +22,8 @@ module.exports = [
         id: "ZDa-Z5JzLYM",
         title: "Code | Development",
         type: "Language:",
-        language: "Python"
+        language: "Python",
+        featured: true
     },
     {
         id: "KDlQE1_fVmU",
@@ -33,6 +35,7 @@ module.exports = [
         id: "t2SPg6IuT3k",
         title: "Code | Development",
         type: "Language:",
-        language: "C#"
+        language: "C#",
+        featured: true
     }
 ]
